@@ -6,6 +6,9 @@ $selector : '.carousel';
 // ** Carousel
 #{$selector} {
 
+  display: none;
+  visibility: hidden;
+
   &__wrapper {
     width: 100%;
     height: 100vh;
@@ -45,13 +48,6 @@ $selector : '.carousel';
 
   }
 
-@media (min-width: 476px) {
-  & {
-    display: none;
-    visibility: hidden;
-  }
-
-}
 
 @media (min-width: 680px) {
   &{
@@ -61,11 +57,13 @@ $selector : '.carousel';
 }
 
 @media (min-width: 992px) {
-
+  @include mixins.make-flexbox(center);
+    visibility: visible;
 }
 
 @media (min-width: 1250px) {
-
+  @include mixins.make-flexbox(center);
+    visibility: visible;
 }
 
 }
