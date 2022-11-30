@@ -1,0 +1,25 @@
+@mixin make-flexbox($justify:center, $align:center, $direction:row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
+
+$sm: 37.5em;
+$md: 48em;
+$lg: 64em;
+$xl: 75em;
+
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media(min-width: $md){
+            @content;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+$selector : '.page';
+
+// ** Page
+#{$selector} {
+  width: 90%;
+  margin: 30px auto;
+  letter-spacing:2px;
+
+  &__title {
+    font-size: 2em;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding-bottom:30px;
+    margin-bottom: 15px;
+    text-shadow: 3px 6px 6px #44444470;
+    -webkit-text-stroke: 1px #222;
+    letter-spacing: 4px;
+  }
+
+}
