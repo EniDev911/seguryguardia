@@ -1,26 +1,30 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navigation from "./components/NavigationComponent";
+import { HashRouter, Routes, Route } from "react-router-dom";
+// import Navigation from "./components/NavigationComponent";
+import NavigationRb from "./components/NavigationRb";
 import AppProvider from "./context/AppCtx";
 // pages
 import About from './pages/About'
-import Carrito from "./pages/Carrito";
 import Home from "./pages/Home";
-import Pizza from "./pages/Pizza";
+import Services from "./pages/Services";
+// import Contacto from './pages/Contacto'
+import ContactoRb from './pages/ContactoRb'
+
 
 
 function App() {
 
   return (
     <AppProvider>
-      <BrowserRouter basename="asiducam">
-        <Navigation />
+      <HashRouter>
+        <NavigationRb />
         <Routes>
           <Route path="/" element={<Home />} index/>
-          <Route path="/pizza/:id" element={<Pizza />} />
+          <Route path="/servicios" element={<Services />} />
+          <Route path="/contacto" element={<ContactoRb />} />
           <Route path="/acerca-de-nosotros" element={<About />} />
           <Route path="*" element={<Home />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 }

@@ -16,20 +16,25 @@ const Navigation: React.FC = () => {
           </Link>
         </li>
         <li>
-          <a href="mailto:asocgremial.camionescoquimbo@gmail.com?subject=Cotizar" 
+          <a href="mailto:asocgremial.camionescoquimbo@gmail.com?subject=Cotizar ${argumento}"
             target="_blank"
             className="nav__link">
-            ✉️ asocgremial.camionescoquimbo@gmail.com
+            ✉️ 
           </a>
         </li>
         <li>
-          <Link to="/gestion" className="nav__link">
-            Gestión
+          <Link to="/servicios" className="nav__link">
+            Servicios
           </Link>
         </li>
         <li>
           <Link to="/acerca-de-nosotros" className="nav__link">
             ¿Quiénes somos?
+          </Link>
+        </li>
+        <li>
+          <Link to="/contacto" className="nav__link">
+            Contactanos
           </Link>
         </li>
       </ul>

@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import CardComponent from "../components/CardComponent";
 import { useAppContext } from "../context/AppCtx";
-import Carrousel from '../components/Carousel';
+// import Carrousel from '../components/Carousel';
+import CarouselRb from '../components/CarouselRb'
 
 const Home: React.FC = () => {
   const { pizzas } = useAppContext();
 
-  const images = ['01.jpg', '02.jpg', '03.jpeg', '04.jpeg']
+  const images = ['01.jpg', '02.jpeg', '03.jpeg', '04.jpeg']
 
   return (
     <>
-      <Carrousel images={images} showButtons/>
-    
+      <CarouselRb/>
       <section className="hero__container">
         <div className="hero__texts">
           <h2 className="hero__title">Home</h2>

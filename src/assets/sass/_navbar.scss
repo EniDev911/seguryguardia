@@ -5,9 +5,9 @@ $selector : '.nav';
 
 // ** Navigation
 #{$selector} {
-
+    height: 50px;
     background: variables.$primary-color;
-    position: sticky;
+    position: sticky !important;
     width: 100%;
     top: 0;
     z-index: 999;
