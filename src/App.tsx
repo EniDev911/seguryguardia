@@ -6,10 +6,7 @@ import AppProvider from "./context/AppCtx";
 import About from './pages/About'
 import Home from "./pages/Home";
 import Services from "./pages/Services";
-// import Contacto from './pages/Contacto'
 import ContactoRb from './pages/ContactoRb'
-
-
 
 function App() {
 

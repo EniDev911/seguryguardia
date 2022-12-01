@@ -66,7 +66,7 @@ const Contacto = () => {
             </div>
             <div className="d-flex align-items-center p-1 m-0">
               <div className="py-2 px-3 rounded d-flex me-3">
-                <i className="fa-solid fa-square-phone fs-4 text-warning"></i>
+                <i className="fa-brands fa-whatsapp fs-4 text-warning"></i>
               </div>
               <div>
                 <p>
