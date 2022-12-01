@@ -10,7 +10,7 @@ function NavigationRb() {
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container>
         {/* Logo Brand */}
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/">
           <img src={Logo} height="40"
             className="d-inline-block align-top"/>
         </Navbar.Brand>
@@ -18,7 +18,7 @@ function NavigationRb() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="mailto:asocgremial.camionescoquimbo@gmail.com?subject=Cotizar">📧 asocgremial.camionescoquimbo@gmail.com</Nav.Link>
-            <Nav.Link href="#link">🚀 Servicios</Nav.Link>
+            <Nav.Link  as={Link} to="/servicios">🚀 Servicios</Nav.Link>
             <Nav.Link as={Link} to="/contacto">🧑‍💻 Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
