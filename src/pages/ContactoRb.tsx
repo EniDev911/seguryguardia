@@ -47,7 +47,6 @@ const Contacto = () => {
     <Container className="my-5">
       <Row>
         <Col xs={12} md={6}>
-         <h3>Datos de Contacto</h3>
         <p>Realice todas sus consultas a través de nuestro formulario, o contactenos por medio de los siguientes datos:</p>
         <br />
         <div className="d-flex align-items-center p-1 m-0">
@@ -78,13 +77,13 @@ const Contacto = () => {
         <Col xs={12} md={6}>
       <FloatingLabel
           controlId="floatingInput"
-          label="email"
+          label="Su nombre"
           className="mb-3"
         >
-          <Form.Control type="email" placeholder="su email" />
+          <Form.Control type="text" placeholder="Su nombre" />
         </FloatingLabel>
-        <FloatingLabel controlId="floatingPassword" label="Password" className="mb-3">
-          <Form.Control type="password" placeholder="Password" />
+        <FloatingLabel controlId="floatingPassword" label="Su email" className="mb-3">
+          <Form.Control type="email" placeholder="Su email" />
         </FloatingLabel>
         <FloatingLabel controlId="floatingTextarea2" label="su mensaje">
           <Form.Control

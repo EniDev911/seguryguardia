@@ -11,7 +11,8 @@ function NavigationRb() {
       <Container>
         {/* Logo Brand */}
         <Navbar.Brand href="/">
-          <img src={Logo} height="40"/>
+          <img src={Logo} height="40"
+            className="d-inline-block align-top"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
