@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CardComponent from "../components/CardComponent";
 import { useAppContext } from "../context/AppCtx";
 // import Carrousel from '../components/Carousel';
 import CarouselRb from '../components/CarouselRb'

@@ -34,7 +34,7 @@ const showModal = () => {
 
 return ( 
     <Card 
-      className="w-100 h-100"
+      className="w-100 h-100 border-0"
       style={{cursor: "pointer"}}
         onClick={showModal}
 

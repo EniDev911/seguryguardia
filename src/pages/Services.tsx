@@ -8,6 +8,7 @@ import s4 from "../assets/png/services/04b.png";
 import s5 from "../assets/png/services/05b.png";
 import sm1 from "../assets/png/services/01.png";
 import sm2 from "../assets/png/services/02.png";
+import sm3 from "../assets/png/services/03.png";
 import sm5 from "../assets/png/services/05.png";
 
 const Services = () => {
@@ -16,7 +17,7 @@ const Services = () => {
   return (
     <Container className="my-5">
       <Row>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb
             image={s1}
             image2={sm1}
@@ -24,7 +25,7 @@ const Services = () => {
             description="Transporte de carga general de todo tipo, sin protección o con carpas."
           />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb
             image={s2}
             title="Camión Tolva"
@@ -32,16 +33,19 @@ const Services = () => {
             image2={sm2}
           />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
-          <CardRb image={s3} title="Tractor convencional liviano, 4x2" />
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
+          <CardRb image={s3} 
+            title="Tractor convencional liviano, 4x2" 
+            description="Transporte de todo tipo de cargas sobre carreteras"
+            image2={sm3} />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb
             image={s4}
             title="Tractor convencional cabina extendida, 4x2"
           />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb
             image={s5}
             title="Tractor frontal 6x2"
@@ -49,25 +53,25 @@ const Services = () => {
             image2={sm5}
           />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb image={s1} />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb image={s1} />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb image={s1} />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb image={s1} />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb image={s1} />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb image={s1} />
         </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
+        <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb image={s1} />
         </Col>
       </Row>
