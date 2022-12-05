@@ -63,16 +63,55 @@ const Contacto = () => {
         background: "#ccc" ,
        }}>
         <h3>Formulario de Contacto</h3>
-      <FloatingLabel
-        controlId="floatingInput"
-        label="Email address"
-        className="mb-3"
-      >
-        <Form.Control type="email" placeholder="name@example.com" />
-      </FloatingLabel>
-      <FloatingLabel controlId="floatingPassword" label="Password">
-        <Form.Control type="password" placeholder="Password" />
-      </FloatingLabel>
+      <form>
+        
+        <div className="input__box">
+          <label htmlFor="">Nombre</label><br />
+          <input type="text"
+            placeholder="Su Nombre"
+            style={
+              {
+                border: "none",
+                width: "100%",
+                borderRadius: "4px",
+                padding: "8px",
+                fontSize: "14px",
+                color: "#444"
+              }
+            }/>
+        </div>
+        <div>
+          <label htmlFor="">Email</label><br />
+          <input type="email" 
+            placeholder="email@gmail.com"
+            style={
+              {
+                border: "none",
+                width: "100%",
+                borderRadius: "4px",
+                padding: "8px",
+                fontSize: "14px",
+                color: "#444"
+              }} />
+        </div>
+        <div>
+          <label htmlFor="">Mensaje</label><br />
+          <textarea
+            name="description"
+            id=""
+            placeholder="Dejanos un mensaje"
+                     style={
+              {
+                border: "none",
+                width: "100%",
+                borderRadius: "4px",
+                padding: "8px",
+                fontSize: "14px",
+                color: "#444"
+              }}
+          ></textarea>
+        </div>
+      </form>
       </div>
       </div>
     </>
