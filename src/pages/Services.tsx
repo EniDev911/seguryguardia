@@ -15,7 +15,7 @@ const Services = () => {
   const images = ["01.jpg", "02.jpeg", "03.jpeg", "04.jpeg"];
 
   return (
-    <Container className="my-5">
+    <Container className="py-5">
       <Row>
         <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
           <CardRb

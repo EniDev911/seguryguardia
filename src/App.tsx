@@ -14,6 +14,7 @@ function App() {
     <AppProvider>
       <HashRouter>
         <NavigationRb />
+        <div className="bg-dark bg-gradient">
         <Routes>
           <Route path="/" element={<Home />} index/>
           <Route path="/servicios" element={<ServicesRb />} />
@@ -21,6 +22,7 @@ function App() {
           <Route path="/acerca-de-nosotros" element={<AboutRb />} />
           <Route path="*" element={<Home />} />
         </Routes>
+        </div>
       </HashRouter>
     </AppProvider>
   );

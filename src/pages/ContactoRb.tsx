@@ -9,7 +9,7 @@ import bgImg from "../assets/slider/03.jpeg";
 
 const Contacto = () => {
   return (
-    <div className="page">
+    <div className="page bg-light">
       {/* Hero */}
       <section
         className="hero"

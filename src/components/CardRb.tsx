@@ -34,16 +34,16 @@ const showModal = () => {
 
 return ( 
     <Card 
-      className="w-100 h-100 border-0"
+      className="w-100 h-100 border-0 bg-dark text-light"
       style={{cursor: "pointer"}}
-        onClick={showModal}
+      onClick={showModal}
 
      >
       <Card.Img variant="top"
         src={image}
         className="d-block fluid"
         style={{
-          filter: "brightness(1)"
+          filter: "brightness(1)",
         }}
         />
         <Card.Body>
