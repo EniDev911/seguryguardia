@@ -34,14 +34,14 @@ const showModal = () => {
 
 return ( 
     <Card 
-      className="w-100 h-100 border-0 bg-dark text-light"
+      className="w-100 h-100 border-0 bg-dark text-light shadow"
       style={{cursor: "pointer"}}
       onClick={showModal}
 
      >
       <Card.Img variant="top"
         src={image}
-        className="d-block fluid"
+        className="d-block fluid rounded-circle border border-2 w-75 mx-auto m-3"
         style={{
           filter: "brightness(1)",
         }}

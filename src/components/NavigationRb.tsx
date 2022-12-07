@@ -22,10 +22,10 @@ function NavigationRb() {
             <Nav.Link href="https://api.whatsapp.com/send/?phone=56974455373&text=Hola+Asiducam%3A&app_absent=0" target="_blank">
               <img src={LogoWhatsApp} alt="logo whatsapp" height="30"/>
             </Nav.Link>
-            <Nav.Link  as={Link} to="/servicios">🚀 Servicios</Nav.Link>
-            <Nav.Link as={Link} to="/contacto">🧑‍💻 Contacto</Nav.Link>
-            <Nav.Link as={Link} to="/acerca-de-nosotros">🚚 Sobre nosotros</Nav.Link>
-            <Nav.Link as={Link} to="/clientes">🚚 Clientes</Nav.Link>
+            <Nav.Link  as={Link} to="/servicios">Servicios</Nav.Link>
+            <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
+            <Nav.Link as={Link} to="/acerca-de-nosotros">Sobre nosotros</Nav.Link>
+            <Nav.Link as={Link} to="/clientes">Clientes</Nav.Link>
             <Nav.Link as={Link} to="#">Intranet</Nav.Link>
           </Nav>
         </Navbar.Collapse>

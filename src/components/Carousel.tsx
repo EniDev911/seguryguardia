@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
+
 interface Props {
   images: string[];
   autoPlay?: boolean;

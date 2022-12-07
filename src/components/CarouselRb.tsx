@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import firstSlideImg from '../assets/slider/01.jpg'
 import secondSlideImg from '../assets/slider/02.jpg'
+import thirdSlideImg from '../assets/slider/04.jpeg'
 // import thirdSlideImg from '../assets/slider/02.jpeg'
 
 function CarouselRb() {
@@ -13,8 +14,8 @@ function CarouselRb() {
           alt="First Slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          {/* <h3>First slide label</h3> */}
+          {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={4000}>
@@ -25,10 +26,14 @@ function CarouselRb() {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          {/* <h3>Second slide label</h3> */}
+          {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
+      <Carousel.Item interval={4000}>
+        <img src={thirdSlideImg} alt="Third Slide" className="d-block w-100"/>
+      </Carousel.Item>
+
     </Carousel>
   );
 }
