@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import ServicesRb from "./pages/Services";
 import ContactoRb from './pages/ContactoRb'
 import Footer from './components/Footer'
+import ContactInfoFooter from "./components/ContactInfoFooter";
+
 function App() {
 
   return (
@@ -25,6 +27,7 @@ function App() {
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
+        <ContactInfoFooter />
         <Footer />
       </HashRouter>
     </AppProvider>

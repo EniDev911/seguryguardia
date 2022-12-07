@@ -3,8 +3,8 @@ import React from 'react'
 function Footer() {
     return (
 
-        <p className="bg-dark bg-gradient py-3 fs-5 text-light m-0 text-center">
-            © ASIDUCAM 2022
+        <p className="py-3 fs-5 text-light m-0 text-center" style={{ background: "#111" }}>
+            © 2022 Asiducam
         </p>
     )
 }
