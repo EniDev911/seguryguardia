@@ -1,22 +1,12 @@
-export interface IPizza {
-    desc: string,
+export interface IService {
     id: string,
+    desc: string,
     img: string,
-    ingredients: string[],
-    name: string,
-    price: number
+    img2: string
 }
 
-export interface ICart {
-    id: string,
-    quantity: number
-}
 
 export interface IApp {
-    pizzas: IPizza[],
-    getPizza: (id: string) => IPizza | void,
-    increaseCartQuantity: (id: string) => void,
-    decreaseCartQuantity: (id: string) => void,
-    cartItems: ICart[],
-    totalCart: (items: ICart[]) => string
+    services: IService[],
+    getService: (id: string) => IService | void
 }

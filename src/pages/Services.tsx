@@ -11,6 +11,7 @@ import s7 from "../assets/png/services/07b.png";
 import s8 from "../assets/png/services/08b.png";
 import s9 from "../assets/png/services/09b.png";
 import s10 from "../assets/png/services/10b.png";
+import s11 from "../assets/png/services/11b.png";
 import sm1 from "../assets/png/services/01.png";
 import sm2 from "../assets/png/services/02.png";
 import sm3 from "../assets/png/services/03.png";
@@ -26,7 +27,7 @@ const Services = () => {
   const images = ["01.jpg", "02.jpeg", "03.jpeg", "04.jpeg"];
 
   return (
-    <div className="bg-dark bg-gradient">
+    <div className="bg-gray bg-gradient">
       <Container className="py-5">
         <Row>
           <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
@@ -57,6 +58,7 @@ const Services = () => {
             <CardRb
               image={s4}
               title="Tractor convencional cabina extendida, 4x2"
+              description="Transporte de todo tipo de cargas sobre carreteras, con capacidad de instalar litera para conducir."
               image2={sm4}
             />
           </Col>
@@ -107,7 +109,8 @@ const Services = () => {
             image2={sm10}/>
           </Col>
           <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
-            <CardRb image={s1} />
+            <CardRb image={s11} title="Semirremolque portacontenedores"
+            description="Transporte de contenedores sin exceso de peso debido a la plataforma, que no es necesario en esta operación"/>
           </Col>
           <Col xs={10} md={6} lg={3} className="mb-3 mx-auto">
             <CardRb image={s1} />

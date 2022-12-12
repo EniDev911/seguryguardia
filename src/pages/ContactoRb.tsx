@@ -9,30 +9,7 @@ import bgImg from "../assets/slider/03.jpeg";
 
 const Contacto = () => {
   return (
-    <div className="page bg-light">
-      {/* Hero */}
-      <section
-        className="hero"
-        style={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${bgImg})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          height: "100vh",
-        }}
-      >
-        <div className="hero__text" style={{ padding: "50px" }}>
-          <h2
-            className="text-light display-1 fw-bold text-uppercase"
-          >
-            Contactenos
-          </h2>
-          <h4
-            className="text-secondary text-uppercase"
-          >
-            Hablemos sobre sus requerimientos
-          </h4>
-        </div>
-      </section>
+    <div className="page bg-body">
       {/* Contact Section */}
       <Container className="my-5">
         <Row>

@@ -1,0 +1,7 @@
+.carousel {}
+
+.carousel-caption {
+  color: #94f;
+  align-self: flex-center;
+  justify-self: flex-end;
+}

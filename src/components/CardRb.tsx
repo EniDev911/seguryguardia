@@ -26,7 +26,7 @@ const CardRb: React.FC<propsType> = ({ image, image2, title, description, light 
       html: `<p>${description}</p>
   <a href="mailto:asocgremial.camionescoquimbo@gmail.com?subject=Cotizar ${title}"
       target="_blank"
-      class="btn btn-warning w-100 my-3">
+      class="btn btn-gray w-100 my-3">
         Cotizar 
     </a>
     `
@@ -35,16 +35,14 @@ const CardRb: React.FC<propsType> = ({ image, image2, title, description, light 
 
   return (
     <Card
-      className={light ? "w-100 h-100 border-0 bg-light text-dark shadow" : "w-100 h-100 border-0 bg-dark text-light shadow"}
-      style={{ cursor: "pointer" }}
+      className="h-100 pointer bg-secondary text-gray border-0"
       onClick={showModal}
-
     >
       <Card.Img variant="top"
         src={image}
-        className="d-block fluid rounded-circle border border-2 w-75 mx-auto m-3"
+        className="d-block card-img rounded-circle border border-2 w-75 mx-auto m-3"
         style={{
-          filter: "brightness(1)",
+          filter: "brightness(1) grayscale(1)"
         }}
       />
       <Card.Body>

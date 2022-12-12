@@ -10,9 +10,10 @@ import tcpCliente from '../assets/png/clientes/logos/TPC.png';
 import ulogCliente from '../assets/png/clientes/logos/Ulog.jpeg';
 import famesaCliente from '../assets/png/clientes/logos/Famesa.png';
 import mtaCliente from '../assets/png/clientes/logos/MTA.png';
-import './home.css'
 import s1 from "../assets/png/services/01b.png";
 import CardRb from "../components/CardRb";
+import ClientesCarousel from "../components/ClientesCarousel";
+import ReviewClientes from "../components/review/Services";
 
 const Home: React.FC = () => {
 
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
   return (
     <div className="bg-light">
       <CarouselRb />
+      <ReviewClientes/>
       <Container>
         <h3 className="text-center my-5">QUIENES CONFÍAN EN NOSOTROS</h3>
         <Stack direction="horizontal" gap={3} className="my-3">
@@ -45,7 +47,6 @@ const Home: React.FC = () => {
             <img src={mtaCliente} alt="cliente png" className="shadow w-100 h-100" />
           </div>
         </Stack>
-
         <h3 className="text-center my-5">ALGUNOS DE NUESTROS SERVICIOS</h3>
         <Container>
           <Row>
@@ -68,7 +69,7 @@ const Home: React.FC = () => {
               <CardRb image={s1} title="Camión plataforma" light={true} />
             </Col>
             <Col className="my-3 mx-auto" lg={6}>
-              <Button onClick={() => navigate('/servicios')} className="w-100">Ver más</Button>
+              <Button onClick={() => navigate('/servicios#')} className="w-100">Ver más</Button>
             </Col>
           </Row>
         </Container>

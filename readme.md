@@ -7,11 +7,13 @@ Hecho con :
 ---
 
 Instalar dependencias:
+
 ```bash
 npm i
 ```
 
 Levantar el servidor de desarrollo:
+
 ```bash
 npm run dev
 ```
@@ -19,11 +21,11 @@ npm run dev
 ---
 
 <p align="center">
-  <a href="https://open.vscode.dev/enidev911/ts-react-mamma-mia">
+  <a href="https://open.vscode.dev/enidev911/asiducam">
 	  <img alt="GitHub repo size" src="https://img.shields.io/badge/-Abrir%20en%20VsCode.dev-%23007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=ffffff" alt="Open in Visual Studio Code" height="35">
   </a>
 	&nbsp;&nbsp;&nbsp;
-  <a href="https://enidev911.github.io/ts-react-mamma-mia/">
+  <a href="https://enidev911.github.io/asiducam/">
 	  <img alt="GitHub" src="https://img.shields.io/badge/-Ver%20en%20GitHub%20Pages-%23000?style=for-the-badge&logo=github&logoColor=ffffff" height="35">
   </a>
 </p>

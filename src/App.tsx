@@ -1,4 +1,5 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 // import Navigation from "./components/NavigationComponent";
 import NavigationRb from "./components/NavigationRb";
 import AppProvider from "./context/AppCtx";
@@ -9,13 +10,30 @@ import Home from "./pages/Home";
 import ServicesRb from "./pages/Services";
 import ContactoRb from './pages/ContactoRb'
 import Footer from './components/Footer'
-import ContactInfoFooter from "./components/ContactInfoFooter";
+import ContactInfoFooter from "./components/ContactInfoFooter"
+import './assets/sass/style.scss'
+import 'animate.css'
+
+  
+ 
 
 function App() {
-
+  function GoToTop() {
+    const routePath = useLocation();
+    const onTop = () => {
+      window.scrollTo(0, 0);
+    }
+    useEffect(() => {
+      onTop()
+    }, [routePath]);
+    
+    return null;
+  };
+  
   return (
     <AppProvider>
       <HashRouter>
+        <GoToTop/>
         <HeroNav />
         <NavigationRb />
         <div className="bg-dark bg-gradient">
