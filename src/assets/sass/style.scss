@@ -143,11 +143,12 @@ $theme-colors: (
 }
 
 
-.swiper-button-prev {
+.swiper-button-prev, .swiper-button-next {
+  visibility: hidden;
 }
 
-.swiper-button-next {
-
+.carousel-text {
+  display: none;
 }
 @media (hover:hover) {
   .hover:hover {
@@ -157,6 +158,9 @@ $theme-colors: (
   .card:hover{
       background: rgba(74, 73, 73, 0.959) !important;
   }
+  .swiper-button-prev:hover {
+    background: #44455530;
+    }
 
 }
 
@@ -169,5 +173,12 @@ $theme-colors: (
   .info-footer {
     padding: 90px;
   }
+  .swiper-button-prev, .swiper-button-next {
+    visibility: visible;
+  }
+  .carousel-text {
+      display: block;
+    }
 }
+
 

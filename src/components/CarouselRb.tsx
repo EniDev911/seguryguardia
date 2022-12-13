@@ -2,6 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import firstSlideImg from '../assets/slider/01.jpg'
 import secondSlideImg from '../assets/slider/02.jpeg'
 import thirdSlideImg from '../assets/slider/04.jpeg'
+import fourdSlideImg from '../assets/slider/01.jpeg'
 
 function CarouselRb() {
   return (
@@ -18,7 +19,7 @@ function CarouselRb() {
             height: '96vh'
           }}>
           <h3 className='t1 text-light fw-bold'>ASIDUCAM</h3>
-          <p className='p1 text-light'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
+          <p className='p1 text-light carousel-text'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
         </div>
       </Carousel.Item>
       {/* SECOND SLIDE */}
@@ -37,7 +38,7 @@ function CarouselRb() {
             height: '96vh'
           }}>
           <h3 className='t1 text-gray fw-bold'>ASIDUCAM</h3>
-          <p className='p1 text-light'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
+          <p className='p1 text-light carousel-text'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
         </div>
       </Carousel.Item>
       {/* THRID SLIDE */}
@@ -54,8 +55,26 @@ function CarouselRb() {
           backgroundRepeat: 'no-repeat',
           height: '96vh'
         }}>
-          <h3 className='t1 text-light'>ASIDUCAM</h3>
-          <p className='p1 text-light'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
+          <h3 className='t1 text-light fw-bold'>ASIDUCAM</h3>
+          <p className='p1 text-light carousel-text'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
+        </div>
+      </Carousel.Item>
+      {/*FOUR SLIDE*/ }
+           <Carousel.Item interval={4000}>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'flex-end',
+          padding: '0 0 60px 0',
+          alignItems: 'center',
+          flexDirection: 'column',
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${fourdSlideImg})`,
+          backgroundPosition: 'center center',
+          backgroundSize: '100% 100%',
+          backgroundRepeat: 'no-repeat',
+          height: '96vh'
+        }}>
+          <h3 className='t1 text-light fw-bold'>ASIDUCAM</h3>
+          <p className='p1 text-light carousel-text'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
         </div>
       </Carousel.Item>
     </Carousel>

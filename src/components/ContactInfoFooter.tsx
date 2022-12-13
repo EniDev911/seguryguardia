@@ -20,7 +20,7 @@ const ContactInfoFooter = () => {
                             <small>Región de Coquimbo - Chile.</small>
                         <div>
                             <i className="fa-regular fa-envelope me-2"></i>
-                            <small>info@asiducam.com</small>
+                            <small>cotizaciones@asiducam.cl</small>
                         </div>
                         <div>
                             <i className="fa-solid fa-phone me-2"></i>

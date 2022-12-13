@@ -4,7 +4,6 @@ import CardRb from "../components/CardRb";
 import { useAppContext } from '../context/AppCtx';
 
 const Services = () => {
-  const images = ["01.jpg", "02.jpeg", "03.jpeg", "04.jpeg"];
 
   const { services } = useAppContext();
 
