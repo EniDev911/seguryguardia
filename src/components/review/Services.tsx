@@ -6,15 +6,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import s1 from '../../assets/png/services/01b.png'
+
+import { useAppContext } from '../../context/AppCtx'
+import CardRb from "../CardRb";
+import { Container } from "react-bootstrap";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
-import CardRb from "../CardRb";
 
-export default function App() {
+export default function ReviewService() {
+  const { services } = useAppContext();
   return (
-    <>
+    <Container className="my-4" fluid>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -28,34 +31,25 @@ export default function App() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <CardRb image={s1}/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRb image={s1}/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRb image={s1}/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRb image={s1}/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRb image={s1}/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRb image={s1}/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRb image={s1}/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRb image={s1}/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRb image={s1}/>
-        </SwiperSlide>
+        {
+          services.map((service) => (
+            <SwiperSlide key={service.id}>
+              <CardRb
+                image={service.img}
+                image2={service.img2}
+                title={service.title}
+                description={service.desc}
+              />
+            </SwiperSlide>
+          ))
+        }
       </Swiper>
-    </>
+    </Container>
   );
 }
+
+
+
+
+
+

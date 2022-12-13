@@ -13,15 +13,11 @@ type AppCtxProviderProps = {
 };
 
 const AppProvider: React.FC<AppCtxProviderProps> = ({ children }) => {
+
   const [services, setServices] = useState<IService[]>([]);
 
-  /**
-   *
-   * @param {string} id > identificador único para buscar entre los servicios
-   * @returns {IPizza}  > returns una pizza del catálogo
-   */
   const getService = (id: string): IService => {
-    const service  = services.find((service) => service.id === id) as IService;
+    const service = services.find((service) => service.id === id) as IService;
     return service;
   };
 

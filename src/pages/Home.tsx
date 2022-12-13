@@ -19,12 +19,11 @@ const Home: React.FC = () => {
 
   const navigate = useNavigate();
 
-  const images = ['01.jpg', '02.jpeg', '03.jpeg', '04.jpeg']
 
   return (
     <div className="bg-light">
       <CarouselRb />
-      <ReviewClientes/>
+      <ReviewClientes />
       <Container>
         <h3 className="text-center my-5">QUIENES CONFÍAN EN NOSOTROS</h3>
         <Stack direction="horizontal" gap={3} className="my-3">
@@ -47,33 +46,6 @@ const Home: React.FC = () => {
             <img src={mtaCliente} alt="cliente png" className="shadow w-100 h-100" />
           </div>
         </Stack>
-        <h3 className="text-center my-5">ALGUNOS DE NUESTROS SERVICIOS</h3>
-        <Container>
-          <Row>
-            <Col xs={4} md={6} lg={2} className="mx-auto">
-              <CardRb image={s1} title="Camión plataforma" light={true} />
-            </Col>
-            <Col xs={4} md={6} lg={2} className="mx-auto">
-              <CardRb image={s1} title="Camión plataforma" light={true} />
-            </Col>
-            <Col xs={4} md={6} lg={2} className="mx-auto">
-              <CardRb image={s1} title="Camión plataforma" light={true} />
-            </Col>
-            <Col xs={4} md={6} lg={2} className="mx-auto">
-              <CardRb image={s1} title="Camión plataforma" light={true} />
-            </Col>
-            <Col xs={4} md={6} lg={2} className="mx-auto">
-              <CardRb image={s1} title="Camión plataforma" light={true} />
-            </Col>
-            <Col xs={4} md={6} lg={2} className="mx-auto">
-              <CardRb image={s1} title="Camión plataforma" light={true} />
-            </Col>
-            <Col className="my-3 mx-auto" lg={6}>
-              <Button onClick={() => navigate('/servicios#')} className="w-100">Ver más</Button>
-            </Col>
-          </Row>
-        </Container>
-
       </Container>
     </div >
   );

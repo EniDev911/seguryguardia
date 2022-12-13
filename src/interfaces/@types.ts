@@ -1,5 +1,6 @@
 export interface IService {
     id: string,
+    title: string,
     desc: string,
     img: string,
     img2: string

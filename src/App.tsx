@@ -14,8 +14,8 @@ import ContactInfoFooter from "./components/ContactInfoFooter"
 import './assets/sass/style.scss'
 import 'animate.css'
 
-  
- 
+
+
 
 function App() {
   function GoToTop() {
@@ -26,14 +26,14 @@ function App() {
     useEffect(() => {
       onTop()
     }, [routePath]);
-    
+
     return null;
   };
-  
+
   return (
     <AppProvider>
       <HashRouter>
-        <GoToTop/>
+        <GoToTop />
         <HeroNav />
         <NavigationRb />
         <div className="bg-dark bg-gradient">

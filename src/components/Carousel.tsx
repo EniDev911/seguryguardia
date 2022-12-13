@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-
 interface Props {
   images: string[];
   autoPlay?: boolean;
@@ -12,11 +11,11 @@ const Carousel = (props: Props) => {
   const [selectedImage, setSelectedImage] = useState(props.images[0]);
   const [loaded, setLoaded] = useState(false);
 
-  
+
   const selectNewImage = (index: number, images: string[], next = true) => {
     setLoaded(false);
     setTimeout(() => {
-      const condition = next ? selectedIndex < images.length - 1: selectedIndex > 0;
+      const condition = next ? selectedIndex < images.length - 1 : selectedIndex > 0;
       const nextIndex = next ? (condition ? selectedIndex + 1 : 0)
         : condition ? selectedIndex - 1 : images.length - 1;
       setSelectedImage(images[nextIndex]);
@@ -25,8 +24,8 @@ const Carousel = (props: Props) => {
   }
 
   useEffect(() => {
-    if (props.autoPlay){
-      const interval = setInterval(() =>{
+    if (props.autoPlay) {
+      const interval = setInterval(() => {
         selectNewImage(selectedIndex, props.images)
       }, 4000)
       return () => clearInterval(interval)
@@ -47,20 +46,20 @@ const Carousel = (props: Props) => {
   return (
     <section className='carousel'>
       <div className="carousel__wrapper">
-      <img 
-        src={imgUrl} 
-        alt="Image" 
-        loading='lazy' 
-        className={loaded? "loaded": ""} 
-        onLoad={() => setLoaded(true)}/>
-      {
-        props.showButtons ? (
-        <div className="carousel__controls">
-          <button onClick={previous}>{'<'}</button>
-          <button onClick={next}>{'>'}</button>
-        </div>
-        ) : (<></>)
-      }
+        <img
+          src={imgUrl}
+          alt="Image"
+          loading='lazy'
+          className={loaded ? "loaded" : ""}
+          onLoad={() => setLoaded(true)} />
+        {
+          props.showButtons ? (
+            <div className="carousel__controls">
+              <button onClick={previous}>{'<'}</button>
+              <button onClick={next}>{'>'}</button>
+            </div>
+          ) : (<></>)
+        }
       </div>
     </section>
   )
