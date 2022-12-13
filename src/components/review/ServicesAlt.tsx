@@ -26,7 +26,23 @@ export default function ReviewServiceAlt() {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        slidesPerGroup={3}
+        breakpoints={{
+          // when window width is >= 640 px
+          365: {
+            width: 365,
+            slidesPerView:1
+          },
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView:2
+          },
+          // when window with is >= 1200px
+          1200: {
+            width:  1200,
+            slidesPerView:3
+          }
+        }}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
@@ -39,11 +55,12 @@ export default function ReviewServiceAlt() {
         {
           services.map((service) => (
             <SwiperSlide key={service.id} style={{
-              height: "260px"
             }}>
               <CardRb image={service.img}
+                      title={service.title}
                       image2={service.img2}
-                      description={service.desc}/>
+                      description={service.desc}
+                      light={true}/>
             </SwiperSlide>
           ))
         }

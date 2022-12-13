@@ -18,7 +18,7 @@ function CarouselRb() {
             backgroundRepeat: 'no-repeat',
             height: '96vh'
           }}>
-          <h3 className='t1 text-light fw-bold'>ASIDUCAM</h3>
+          <h3 className='carousel-title t1 text-light fw-bold'>ASIDUCAM</h3>
           <p className='p1 text-light carousel-text'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
         </div>
       </Carousel.Item>
@@ -37,7 +37,7 @@ function CarouselRb() {
             backgroundRepeat: 'no-repeat',
             height: '96vh'
           }}>
-          <h3 className='t1 text-gray fw-bold'>ASIDUCAM</h3>
+          <h3 className='carousel-title t1 text-gray fw-bold'>ASIDUCAM</h3>
           <p className='p1 text-light carousel-text'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
         </div>
       </Carousel.Item>
@@ -55,7 +55,7 @@ function CarouselRb() {
           backgroundRepeat: 'no-repeat',
           height: '96vh'
         }}>
-          <h3 className='t1 text-light fw-bold'>ASIDUCAM</h3>
+          <h3 className='carousel-title t1 text-light fw-bold'>ASIDUCAM</h3>
           <p className='p1 text-light carousel-text'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
         </div>
       </Carousel.Item>
@@ -73,7 +73,7 @@ function CarouselRb() {
           backgroundRepeat: 'no-repeat',
           height: '96vh'
         }}>
-          <h3 className='t1 text-light fw-bold'>ASIDUCAM</h3>
+          <h3 className='carousel-title t1 text-light fw-bold'>ASIDUCAM</h3>
           <p className='p1 text-light carousel-text'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
         </div>
       </Carousel.Item>

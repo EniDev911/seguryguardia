@@ -45,7 +45,6 @@ export default function ReviewClientes() {
           clientes.map((cliente, index) => (
             <SwiperSlide key={index}>
               <div className="d-block bg-dark text-light position-relative"
-              
               style= {{height: "160px"}}>
                 <img src={cliente} alt="" className="d-block w-100 h-100"/>
               </div>

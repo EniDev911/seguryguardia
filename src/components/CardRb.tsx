@@ -35,7 +35,7 @@ const CardRb: React.FC<propsType> = ({ image, image2, title, description, light 
 
   return (
     <Card
-      className="h-100 pointer bg-secondary text-gray border-0"
+      className={light?"h-100 pointer bg-light text-dark border-0 rounded" : "h-100 pointer bg-secondary text-gray border-0"} 
       onClick={showModal}
     >
       <Card.Img variant="top"
