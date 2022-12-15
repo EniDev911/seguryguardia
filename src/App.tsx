@@ -37,16 +37,14 @@ function App() {
         <GoToTop />
         <HeroNav />
         <NavigationRb />
-        <div className="bg-dark bg-gradient">
-          <Routes>
-            <Route path="/" element={<Home />} index />
-            <Route path="/servicios" element={<ServicesRb />} />
-            <Route path="/contacto" element={<ContactoRb />} />
-            <Route path="/empresa" element={<EmpresaRb />} />
-            <Route path="/clientes" element={<ClientesRb />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} index />
+          <Route path="/servicios" element={<ServicesRb />} />
+          <Route path="/contacto" element={<ContactoRb />} />
+          <Route path="/empresa" element={<EmpresaRb />} />
+          <Route path="/clientes" element={<ClientesRb />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
         <ContactInfoFooter />
         <Footer />
       </HashRouter>

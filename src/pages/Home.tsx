@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom'
-import { useAppContext } from "../context/AppCtx";
 import Carrousel from '../components/Carousel';
 import CarouselRb from '../components/CarouselRb'
-import { Stack, Container, Row, Col, Button } from 'react-bootstrap'
+import { Stack } from 'react-bootstrap'
 import ReviewClientes from "../components/review/Clientes";
 import ReviewService from "../components/review/ServicesAlt";
 import Valores from "../components/review/Valores";
@@ -11,29 +10,35 @@ import Valores from "../components/review/Valores";
 const Home: React.FC = () => {
 
   const navigate = useNavigate();
-  const {services} = useAppContext();
 
   return (
     <div className="bg-light">
       <CarouselRb />
-      <Valores/>
+      <h2 className="display-4 fw-bold my-5 text-center" style={{
+        letterSpacing: "3px"
+      }}>ASIDUCAM</h2>
+      <Stack direction="horizontal" gap={3} className="mx-auto justify-content-center" style={{
+        color: "#666",
+        fontWeight: "500",
+      }}>
+        <div className="text-stack d-flex">
+          <p className=""><small>DISTRIBUCIÓN</small></p>
+          <div className="vr mx-2" />
+          <p className=""><small>TRANSPORTE</small></p>
+          <div className="vr mx-2" />
+          <p className=""><small>LOGISTÍCA, DESDE 2009</small></p>
+        </div>
+      </Stack>
+      {/* <div className="d-flex justify-content-center align-content-cente w-75 mx-auto fs-5">
+        <p className="">DISTRIBUCIÓN</p>
+        <div className="vr mx-2" />
+        <p className="">TRANSPORTE</p>
+        <div className="vr mx-2" />
+        <p className="">LOGISTÍCA, DESDE 2009</p>
+      </div> */}
+      <Valores />
       <ReviewService />
       <ReviewClientes />
-      {/* <Row>
-      {
-        services?.filter((service, index) => index < 4)
-        .map(service => {
-          return (
-          <Col key={service.id} xs={6} md={6} lg={3} className="mx-auto">
-              <div>
-              <img src={service.img} className="img-fluid"/>
-              </div>
-          </Col>) 
-        })
-      }
-
-        <Button variant="dark" className="w-50 mx-auto mt-5" onClick={() => navigate("servicios")}>Ver Más</Button>
-      </Row> */}
     </div >
   );
 };
