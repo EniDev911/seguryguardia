@@ -45,11 +45,5 @@ export default function ReviewService() {
   );
 }
 
-          // <CardRb
-          //       image={service.img}
-          //       image2={service.img2}
-          //       title={service.title}
-          //       description={service.desc}
-          //     />
 
 

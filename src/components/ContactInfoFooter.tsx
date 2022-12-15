@@ -15,7 +15,7 @@ const ContactInfoFooter = () => {
                         <h3 style={{ borderLeft: "3px solid #fff", paddingLeft: "14px", color: "#fff"}} className="">Contacto</h3>
                         <div>
                             <i className="fa-solid fa-location-dot me-2"></i>
-                            <small>Baquedano 963, coquimbo</small>
+                            <small>Baquedano 963, Coquimbo</small>
                         </div>
                             <small>Región de Coquimbo - Chile.</small>
                         <div>
@@ -24,31 +24,10 @@ const ContactInfoFooter = () => {
                         </div>
                         <div>
                             <i className="fa-solid fa-phone me-2"></i>
-                            <small>+56 51 232 2643</small>
+                            <small>+56 9 7445 5373</small>
                         </div>
                     </Stack>
                 </Col>
-                        {/* <div className="d-flex flex-column">
-                            <h3 style={{ borderLeft: "3px solid #fff" }} className="">Contacto</h3>
-                            <div className="">
-                                
-                                <small>Región de Coquimbo - Chile.</small>
-                            </div>
-                            <div className="">
-                                <div>
-                                    <i className="fa-regular fa-envelope text-light me-2"></i>
-                                    <small>info@asiducam.com</small>
-                                </div>
-                                <small>Región de Coquimbo - Chile.</small>
-                            </div>
-                            <div className="">
-                                <div>
-                                    <i className="fa-solid fa-phone text-light me-2"></i>
-                                    <small>+56 51 232 2643</small>
-                                </div>
-                            </div>
-                        </div>
-                    </Stack> */}
             </Row>
         </Container >
     )

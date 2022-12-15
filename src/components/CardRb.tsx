@@ -35,7 +35,7 @@ const CardRb: React.FC<propsType> = ({ image, image2, title, description, light 
 
   return (
     <Card
-      className={light?"h-100 pointer bg-light text-dark border-0 rounded" : "h-100 pointer bg-secondary text-gray border-0"} 
+      className={light?"h-100 pointer bg-light text-dark border-0" : "h-100 pointer bg-secondary text-gray border-0 hover-card"} 
       onClick={showModal}
     >
       <Card.Img variant="top"
@@ -46,7 +46,7 @@ const CardRb: React.FC<propsType> = ({ image, image2, title, description, light 
         }}
       />
       <Card.Body>
-        <Card.Title className="text-center">{title}</Card.Title>
+        <Card.Title className="text-center fs-5">{title}</Card.Title>
       </Card.Body>
     </Card>
   )

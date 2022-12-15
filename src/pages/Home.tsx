@@ -6,6 +6,7 @@ import CarouselRb from '../components/CarouselRb'
 import { Stack, Container, Row, Col, Button } from 'react-bootstrap'
 import ReviewClientes from "../components/review/Clientes";
 import ReviewService from "../components/review/ServicesAlt";
+import Valores from "../components/review/Valores";
 
 const Home: React.FC = () => {
 
@@ -15,9 +16,9 @@ const Home: React.FC = () => {
   return (
     <div className="bg-light">
       <CarouselRb />
-      <ReviewClientes />
-      <Container fluid style={{margin: "70px 0"}}>
+      <Valores/>
       <ReviewService />
+      <ReviewClientes />
       {/* <Row>
       {
         services?.filter((service, index) => index < 4)
@@ -33,7 +34,6 @@ const Home: React.FC = () => {
 
         <Button variant="dark" className="w-50 mx-auto mt-5" onClick={() => navigate("servicios")}>Ver Más</Button>
       </Row> */}
-      </Container>
     </div >
   );
 };
