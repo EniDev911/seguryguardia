@@ -14,6 +14,7 @@ import ContactInfoFooter from "./components/ContactInfoFooter"
 import './assets/sass/style.scss'
 import 'animate.css'
 import ClientesRb from "./pages/ClientesRb";
+import Contacto from "./components/footer/Contacto";
 
 
 
@@ -45,6 +46,7 @@ function App() {
           <Route path="/clientes" element={<ClientesRb />} />
           <Route path="*" element={<Home />} />
         </Routes>
+        <Contacto />
         <ContactInfoFooter />
         <Footer />
       </HashRouter>

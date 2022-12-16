@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom'
-import Carrousel from '../components/Carousel';
 import CarouselRb from '../components/CarouselRb'
 import { Stack } from 'react-bootstrap'
 import ReviewClientes from "../components/review/Clientes";
