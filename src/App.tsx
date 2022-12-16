@@ -9,15 +9,12 @@ import EmpresaRb from './pages/Empresa'
 import Home from "./pages/Home";
 import ServicesRb from "./pages/Services";
 import ContactoRb from './pages/ContactoRb'
-import Footer from './components/Footer'
-import ContactInfoFooter from "./components/ContactInfoFooter"
+import Footer from './components/footer/Footer'
+import ContactInfoFooter from "./components/footer/ContactInfoFooter"
 import './assets/sass/style.scss'
 import 'animate.css'
 import ClientesRb from "./pages/ClientesRb";
 import Contacto from "./components/footer/Contacto";
-
-
-
 
 function App() {
   function GoToTop() {

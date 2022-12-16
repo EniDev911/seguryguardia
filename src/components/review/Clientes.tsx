@@ -11,7 +11,7 @@ import "swiper/css/autoplay"
 import nextImg from '../../assets/png/btns/forward_96px.png'
 import prevImg from '../../assets/png/btns/back_96px.png'
 
-import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
@@ -30,18 +30,21 @@ export default function ReviewClientes() {
   const navigationNextRef = React.useRef<HTMLInputElement>(null)
   const clientes = [logoCmp, TPC, logoMc, MTA, Ulog, Famesa]
   return (
-    <>
+
+    <React.Fragment>
       <h4 className="text-uppercase text-center mt-5 fs-2 fw-bold"
         style={{ letterSpacing: "3px", color: "#444" }}>nuestros clientes</h4>
       <h5 className="text-center text-uppercase fs-5 mb-5"
         style={{ color: "#444" }}>quienes confían en nosotros</h5>
-      <Container className="py-5 mx-0 p-0" fluid style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(190, 190, 180, 0.7))`,
-        backgroundSize: '100% 100%',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+      <Row style={{
+        padding: '100px 0',
+        background: '#282D47'
       }}>
+
         <Swiper
+          style={{
+            width: "95%"
+          }}
           spaceBetween={10}
           breakpoints={{
             // when window width is >= 640 px
@@ -85,7 +88,7 @@ export default function ReviewClientes() {
             ))
           }
         </Swiper>
-      </Container>
-    </>
+      </Row>
+    </React.Fragment>
   );
 }

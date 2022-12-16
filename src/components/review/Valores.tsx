@@ -5,7 +5,7 @@ import data from '../../assets/data/valores.json'
 const Valores = () => {
   return (
     <Container fluid className="p-5 my-4 bg-body">
-      <h4 className="fw-bold text-center fs-2" style={{color: "#777"}}>NUESTROS VALORES</h4>
+      <h4 className="fw-bold text-center fs-2" style={{ color: "#777" }}>NUESTROS VALORES</h4>
       <Row>
         {
           data.map(val => {
@@ -20,7 +20,7 @@ const Valores = () => {
                       {val.name}
                     </Card.Title>
                   </Card.Body>
-                </Card> 
+                </Card>
               </Col>
             )
           })
