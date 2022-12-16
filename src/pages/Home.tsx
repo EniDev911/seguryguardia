@@ -28,15 +28,17 @@ const Home: React.FC = () => {
           <p className=""><small>LOGISTÍCA, DESDE 2009</small></p>
         </div>
       </Stack>
-      {/* <div className="d-flex justify-content-center align-content-cente w-75 mx-auto fs-5">
-        <p className="">DISTRIBUCIÓN</p>
-        <div className="vr mx-2" />
-        <p className="">TRANSPORTE</p>
-        <div className="vr mx-2" />
-        <p className="">LOGISTÍCA, DESDE 2009</p>
-      </div> */}
+      <hr className="w-25 border border-3 border-warning mx-auto" style={{
+        margin: '110px 0'
+      }} />
       <Valores />
+      <hr className="w-25 border border-3 border-warning mx-auto" style={{
+        margin: '0 0 110px 0'
+      }} />
       <ReviewService />
+      <hr className="w-25 border border-3 border-warning mx-auto" style={{
+        margin: '110px 0'
+      }} />
       <ReviewClientes />
     </div >
   );

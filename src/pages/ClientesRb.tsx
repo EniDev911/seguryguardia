@@ -11,17 +11,17 @@ function ClientesRb() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
-        padding: '110px'
+        padding: '110px 0'
       }}>
-        <Col xs={11} md={6} lg={4}>
+        <Col xs={11} sm={10} md={6} lg={4}>
           <h3 className="fs-2 fw-bold text-dark">SOMOS SOCIOS ESTRATÉGICOS</h3>
         </Col>
-        <Col xs={3} md={1} lg={1} style={{ height: '3px' }} className="bg-danger rounded my-2">
+        <Col xs={3} sm={10} md={1} lg={1} style={{ height: '3px' }} className="bg-danger rounded my-2">
         </Col>
-        <Col xs={11} md={6} lg={4} className="mt-5">
+        <Col xs={11} sm={10} md={6} lg={4} className="mt-5">
           <h4 className="text-uppercase fw-bold fs-2 mb-4" style={{ color: "#666" }}>ASIDUCAM</h4>
         </Col>
-        <Col xs={11} md={6} lg={8}>
+        <Col xs={11} sm={10} md={6} lg={8}>
           <p className="mt-2 fs-4" style={{ color: "#555" }}>Nuestro esfuerzo y objetivo están en función de la satisfacción de las necesidades de nuestros clientes, aportando soluciones de calidad para cada uno de sus requerimientos.</p>
         </Col>
       </Row>

@@ -3,11 +3,11 @@ import { Row } from 'react-bootstrap';
 
 function Footer() {
     return (
-        <React.Fragment>
-            <p className="py-3 fs-5 text-light m-0 text-center" style={{ background: "#111" }}>
+        <Row style={{ background: "#111" }}>
+            <p className="py-3 fs-5 text-light m-0 text-center">
                 © 2022 Asiducam
             </p>
-        </React.Fragment>
+        </Row>
     )
 }
 

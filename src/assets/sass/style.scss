@@ -25,18 +25,11 @@ body {
   display: inline-block;
   margin: 0 0.5rem;
   font-size: 60px;
-  animation: zoomIn;
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s;
   /* don't forget to set a duration! */
 }
 .p1 {
     display: block;
-    margin: 0.5rem;
-    font-size: 30px;
-    font-weight: normal;
-    animation: fadeIn;
-    animation-duration: 5s;
+    font-size: 14px;
 }
 
 // scss-docs-start gray-color-variables
@@ -163,9 +156,6 @@ $theme-colors: (
 
 /* MY CONTROLS NAVIGATION */
 .control-slider {
-  display: none;
-}
-.carousel-text {
   display: none;
 }
 
