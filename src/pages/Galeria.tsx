@@ -9,11 +9,11 @@ import pic06 from '../assets/items/galeria/06.jpg'
 import pic07 from '../assets/items/galeria/07.jpg'
 import pic08 from '../assets/items/galeria/08.jpg'
 import pic09 from '../assets/items/galeria/09.jpg'
-import pic10 from '../assets/items/galeria/10.jpeg'
-import pic11 from '../assets/items/galeria/11.jpeg'
-import pic12 from '../assets/items/galeria/12.jpeg'
-import pic13 from '../assets/items/galeria/13.jpeg'
-import pic14 from '../assets/items/galeria/14.jpeg'
+import pic10 from '../assets/items/galeria/10.jpg'
+import pic11 from '../assets/items/galeria/11.jpg'
+import pic12 from '../assets/items/galeria/12.jpg'
+import pic13 from '../assets/items/galeria/13.jpg'
+import pic14 from '../assets/items/galeria/14.jpg'
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import BgHeroRb from '../components/background/BgHeroRb'
@@ -78,5 +78,3 @@ const Galeria = () => {
 }
 
 export default Galeria
-
-            // <Button variant="outline-warning" className="rounded-0" href={pic}>Expandir</Button>
