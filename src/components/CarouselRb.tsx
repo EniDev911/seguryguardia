@@ -13,10 +13,9 @@ function CarouselRb() {
       <Carousel.Item interval={4000} className="">
         <div className='w-100 p-5 slide text-light'
           style={{
-            background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${firstSlideImg})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${firstSlideImg})`,
             backgroundPosition: 'center center',
             backgroundSize: '100% 100%',
-            backgroundAttachment: 'scroll',
             backgroundRepeat: 'no-repeat'
           }}>
           <h3 className='carousel-title animate__animated animate__zoomIn animate__delay-1s fw-bold'>ASIDUCAM</h3>
@@ -32,11 +31,10 @@ function CarouselRb() {
             justifyContent: 'flex-end',
             alignContent: 'center',
             padding: '0 0 80px 0',
-            background: `linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(${secondSlideImg})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(${secondSlideImg})`,
             backgroundPosition: 'center center',
             backgroundSize: '100% 100%',
-            backgroundRepeat: 'no-repeat'
-          }}>
+            backgroundRepeat: 'no-repeat'}}>
           <h3 className='text-center carousel-title animate__animated animate__fadeIn animate__delay-1s text-gray fw-bold rounded'
             style={{
               backdropFilter: "blur(10px)",
@@ -57,9 +55,8 @@ function CarouselRb() {
           flexDirection: 'column',
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${thirdSlideImg})`,
           backgroundPosition: 'center center',
-          backgroundSize: '100% 100%',
-          backgroundRepeat: 'no-repeat'
-        }}>
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'}}>
           <h3 className='carousel-title text-center animate__animated animate__fadeIn animate__delay-1s text-gray fw-bold rounded' style={{
             backdropFilter: "blur(10px)",
             margin: "0 auto",
@@ -80,13 +77,15 @@ function CarouselRb() {
           flexDirection: 'column',
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${fourdSlideImg})`,
           backgroundPosition: 'center center',
-          backgroundSize: '100% 100%',
-          backgroundRepeat: 'no-repeat'
-        }}>
-          <h3 className='carousel-title animate__animated animate__zoomIn animate__delay-1s fw-bold text-gray'>ASIDUCAM</h3>
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'}}>
+          <h3 className='carousel-title p-2 bg-warning bg-gradient text-dark animate__animated animate__zoomIn animate__delay-1s fw-bold text-gray' style={{
+            backdropFilter: "blur(10px)",
+            margin: '0 auto'
+          }}>ASIDUCAM</h3>
           <p className='p1 text-center fs-2 fs-bold fst-italic animate__animated animate__fadeIn text-gray animate__delay-2s animate__slow rounded' style={{
-            display: "inline",
-            margin: "0 auto"
+            backdropFilter: "blur(10px)",
+            margin: '0 auto'
           }}>Experiencia y calidad a su disposición.</p>
         </div>
       </Carousel.Item>

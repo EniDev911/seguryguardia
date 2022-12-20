@@ -40,10 +40,7 @@ const CardRb: React.FC<propsType> = ({ image, image2, title, description, light 
     >
       <Card.Img variant="top"
         src={image}
-        className="d-block card-img rounded-circle border border-2 w-75 mx-auto m-3"
-        style={{
-          filter: "brightness(1) grayscale(1)"
-        }}
+        className="d-block card-img-service rounded-circle border border-2 w-75 mx-auto m-3"
       />
       <Card.Body>
         <Card.Title className="text-center fs-5">{title}</Card.Title>

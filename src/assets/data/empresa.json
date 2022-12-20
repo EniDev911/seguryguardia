@@ -1,0 +1,30 @@
+{
+  "empresa": [
+      {
+        "id": "001",
+        "title": "ASIDUCAM",
+        "content": "Está compuesta por 78 socios, que mantienen residencia en la región de"
+      },
+      {
+        "id": "002",
+        "title": "VISIÓN",
+        "content": "Lograr afianzar a ASIDUCAM como una organización consolidada en logística, transferencia y almacenamiento de carga."
+      },
+      {
+        "id": "003",
+        "title": "MISIÓN",
+        "content": "Reunir a los pequeños empresarios dueños de camiones de la Región de Coquimbo para acceder en conjunto a mejores oportunidades del mercado y lograr eficiencia en la operación. Ofreciendo un servicio a los clientes que destaque por la seguridad, puntualidad y calidad, con personal calificado y competitivo, siendo respetuosos con la ciudadanía y cuidando el medio ambiente."
+      },
+      {
+        "id": "004",
+        "title": "¿QUIÉNES SOMOS?",
+        "content": "Somos la asociación Gremial de Dueños de Camiones de Coquimbo y nuestra misión es unificar a los pequeños y medianos transportistas de la región de Coquimbo para poder ser más competitivos en el mercado del transporte de carga, concretando trabajos seguros y pagos de sus facturas a tiempo, proporcionando una red de apoyo logístico para los transportistas y asesorarlos en su gestión. De esa manera se benificia más de 150 familias de la región, esto incluye a los dueños de camiones y sus choferes, lo que permite que la economía de la región avance. Además, Asiducam ayuda a que sus socios puedan renovar sus equipos y de esa manera ir a la vanguardia del transporte, algo que si no fuera por la unión que logra la Asociación Gremial sería casi imposible.<br />Actualmente Asiducam está compueta por 78 socios, de los cuales 65 están activos. <br />Desde el año 2018 Asiducam es miembro activo de la Comunidad Logística Portuaría Coquimbo (<strong>CLPC</strong>)"
+      }
+],
+  "servicios": [
+    "Re pesaje en Batea", 
+    "Embarque concentrado en rampla plana",
+    "Desembarque Trigo en Batea",
+    "Movimientos internos en rampla plana",
+    "Algunos servicios especiales de movimiento de maquinarias"]
+}

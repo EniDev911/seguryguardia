@@ -1,4 +1,4 @@
-export interface IService {
+export type Service = {
     id: string,
     title: string,
     desc: string,
@@ -8,6 +8,6 @@ export interface IService {
 
 
 export interface IApp {
-    services: IService[],
-    getService: (id: string) => IService | void
+    services: Service[],
+    getService: (id: string) => Service | void
 }

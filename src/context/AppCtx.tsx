@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { IApp, IService } from "../interfaces/@types";
+import { IApp, Service } from "../interfaces/@types";
 
 const AppContext = createContext<IApp>({} as IApp);
 
-// hooks
+
 export function useAppContext() {
   return useContext(AppContext) as IApp;
 }
@@ -14,10 +14,10 @@ type AppCtxProviderProps = {
 
 const AppProvider: React.FC<AppCtxProviderProps> = ({ children }) => {
 
-  const [services, setServices] = useState<IService[]>([]);
+  const [services, setServices] = useState<Service[]>([]);
 
-  const getService = (id: string): IService => {
-    const service = services.find((service) => service.id === id) as IService;
+  const getService = (id: string) => {
+    const service = services.find((servicio) => servicio.id === id);
     return service;
   };
 

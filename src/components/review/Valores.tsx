@@ -6,11 +6,11 @@ const Valores = () => {
   return (
     <Container fluid className="p-5 my-4 bg-body">
       <h4 className="fw-bold text-center fs-2" style={{ color: "#777" }}>NUESTROS VALORES</h4>
-      <Row>
+      <Row className="justify-content-center">
         {
           data.map(val => {
             return (
-              <Col key={val.id} xs={10} md={6} lg={4} className="mx-auto">
+              <Col key={val.id} xs={6} md={4} lg={4} xl={3} xxl={2} className="mx-auto">
                 <Card className="my-2 border-0">
                   <Card.Header className="mx-auto bg-body">
                     <i className={val.icon} />

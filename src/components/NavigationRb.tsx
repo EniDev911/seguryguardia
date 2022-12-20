@@ -17,11 +17,12 @@ function NavigationRb() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto text-uppercase">
             <Nav.Link as={Link} to="/" className={location.pathname === "/" ? "active" : ""}>Inicio</Nav.Link>
             <Nav.Link as={Link} to="/servicios" className={location.pathname === "/servicios" ? "active" : ""}>Servicios</Nav.Link>
             <Nav.Link as={Link} to="/empresa" className={location.pathname === "/empresa" ? "active" : ""}>Empresa</Nav.Link>
             <Nav.Link as={Link} to="/clientes" className={location.pathname === "/clientes" ? "active" : ""}>Clientes</Nav.Link>
+            <Nav.Link as={Link} to="/galeria" className={location.pathname === "/galeria" ? "active" : ""}>Galería</Nav.Link>
             <Nav.Link as={Link} to="/contacto" className={location.pathname === "/contacto" ? "active" : ""}>Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 // import Navigation from "./components/NavigationComponent";
 import NavigationRb from "./components/NavigationRb";
@@ -7,14 +7,21 @@ import HeroNav from './components/HeroNav'
 // pages
 import EmpresaRb from './pages/Empresa'
 import Home from "./pages/Home";
-import ServicesRb from "./pages/Services";
-import ContactoRb from './pages/ContactoRb'
+// import Servicios from "./pages/ServiciosRb";
+const Servicios = lazy(()=> import('./pages/ServiciosRb'))
+import Contacto from './pages/ContactoRb'
 import Footer from './components/footer/Footer'
 import ContactInfoFooter from "./components/footer/ContactInfoFooter"
 import './assets/sass/style.scss'
 import 'animate.css'
-import ClientesRb from "./pages/ClientesRb";
-import Contacto from "./components/footer/Contacto";
+// import ClientesRb from "./pages/ClientesRb";
+const ClientesRb = lazy(()=> import('./pages/ClientesRb'))
+// import FooterContacto from "./components/footer/Contacto";
+const FooterContacto = lazy(()=> import('./components/footer/Contacto'))
+import { Container } from "react-bootstrap";
+// import Galeria from "./pages/Galeria";
+const Galeria = lazy(()=> import('./pages/Galeria'))
+import Loading from "./components/Loading";
 
 function App() {
   function GoToTop() {
@@ -30,24 +37,31 @@ function App() {
   };
 
   return (
+    <Suspense fallback={<Loading/>}>
     <AppProvider>
       <HashRouter>
         <GoToTop />
         <HeroNav />
         <NavigationRb />
-        <Routes>
-          <Route path="/" element={<Home />} index />
-          <Route path="/servicios" element={<ServicesRb />} />
-          <Route path="/contacto" element={<ContactoRb />} />
-          <Route path="/empresa" element={<EmpresaRb />} />
-          <Route path="/clientes" element={<ClientesRb />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
-        <Contacto />
-        <ContactInfoFooter />
-        <Footer />
+        <Container fluid className="p-0" style={{
+          overflow: 'hidden'
+        }}>
+          <Routes>
+            <Route path="/" element={<Home />} index />
+            <Route path="/servicios" element={<Servicios />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/empresa" element={<EmpresaRb />} />
+            <Route path="/galeria" element={<Galeria />} />
+            <Route path="/clientes" element={<ClientesRb />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+          <FooterContacto />
+          <ContactInfoFooter />
+          <Footer />
+        </Container>
       </HashRouter>
     </AppProvider>
+    </Suspense>
   );
 }
 
