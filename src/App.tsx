@@ -9,7 +9,7 @@ import EmpresaRb from './pages/Empresa'
 import Home from "./pages/Home";
 // import Servicios from "./pages/ServiciosRb";
 const Servicios = lazy(()=> import('./pages/ServiciosRb'))
-import Contacto from './pages/ContactoRb'
+import Contacto from './pages/Contacto'
 import Footer from './components/footer/Footer'
 import ContactInfoFooter from "./components/footer/ContactInfoFooter"
 import './assets/sass/style.scss'

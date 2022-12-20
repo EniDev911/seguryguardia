@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import bgImg from "../assets/slider/03.jpeg";
 
 const Contacto = () => {
   const [name, setName] = useState("");
