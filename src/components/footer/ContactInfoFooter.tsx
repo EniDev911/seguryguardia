@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Container, Stack } from 'react-bootstrap'
+import { Row, Col, Stack } from 'react-bootstrap'
 
 const ContactInfoFooter = () => {
     return (

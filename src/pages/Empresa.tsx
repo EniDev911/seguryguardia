@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import BgHeroRb from "../components/background/BgHeroRb";
+import BgHeroRb from "../components/background/BgSection";
 import ReviewCliente from "../components/review/Clientes";
 import Valores from "../components/review/Valores";
 import SubHero from "../components/SubHero";
@@ -9,7 +9,7 @@ import empresaData from "../assets/data/empresa.json";
 const Empresa = () => {
   return (
     <section className="bg-gray bg-gradient animate__animated animate__fadeIn">
-      <BgHeroRb title="empresa" />
+      <BgHeroRb title="empresa" image=""/>
       <Container className="p-5 bg-body shadow">
         <SubHero />
         {empresaData.empresa.map((item) => {

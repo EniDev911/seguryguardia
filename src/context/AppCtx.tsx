@@ -3,7 +3,6 @@ import { IApp, Service } from "../interfaces/@types";
 
 const AppContext = createContext<IApp>({} as IApp);
 
-
 export function useAppContext() {
   return useContext(AppContext) as IApp;
 }
@@ -15,16 +14,15 @@ type AppCtxProviderProps = {
 const AppProvider: React.FC<AppCtxProviderProps> = ({ children }) => {
 
   const [services, setServices] = useState<Service[]>([]);
-
-  const getService = (id: string) => {
-    const service = services.find((servicio) => servicio.id === id);
-    return service;
-  };
+  const [nameServices, setNameServices] = useState([]);
 
   useEffect(() => {
-    fetch("./services.json")
+    fetch("/data/servicios.json")
       .then((res) => res.json())
-      .then((data) => setServices(data))
+      .then((data) => {
+        setServices(data.servicios),
+        setNameServices(data.nombres)
+      })
       .catch((e) => console.error(e.message));
   }, []);
 
@@ -32,7 +30,7 @@ const AppProvider: React.FC<AppCtxProviderProps> = ({ children }) => {
     <AppContext.Provider
       value={{
         services,
-        getService
+        nameServices
       }}
     >
       {children}

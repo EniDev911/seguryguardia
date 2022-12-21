@@ -1,6 +1,5 @@
 import React, { lazy } from "react";
 import { useNavigate } from 'react-router-dom'
-// import CarouselRb from '../components/CarouselRb'
 const CarouselRb = lazy(() => import('../components/CarouselRb'))
 import { Stack, Row } from 'react-bootstrap'
 import ReviewClientes from "../components/review/Clientes";

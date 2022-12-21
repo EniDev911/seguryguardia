@@ -16,7 +16,7 @@ import pic13 from '../assets/items/galeria/13.jpg'
 import pic14 from '../assets/items/galeria/14.jpg'
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
-import BgHeroRb from '../components/background/BgHeroRb'
+import BgHeroRb from '../components/background/BgSection'
 import SubHero from '../components/SubHero'
 
 const Galeria = () => {
@@ -48,7 +48,7 @@ const Galeria = () => {
   const photos = [pic01, pic02, pic03, pic04, pic05, pic06, pic07, pic08, pic09, pic10, pic11, pic12, pic13, pic14] 
   return (
     <section className="bg-body bg-gradient animate__animated animate__fadeIn">
-    <BgHeroRb title="galería" subtitle='IMAGENES DE NUESTRAS ACCIONES DE RSE Y REUNIONES'/>
+    <BgHeroRb title="galería" subtitle='IMAGENES DE NUESTRAS ACCIONES DE RSE Y REUNIONES' image=""/>
     <h3 className="text-center mt-3 fw-bold fs-1 text-dark" style={{
       letterSpacing: '3px'
     }}>ASIDUCAM</h3>

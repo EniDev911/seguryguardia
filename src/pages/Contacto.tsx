@@ -1,23 +1,9 @@
 import React, { useState } from "react";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import {Container, Row, Col} from "react-bootstrap";
+import FormEmailjs from '../components/FormEmailjs'
 
 const Contacto = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [comment, setComment] = useState("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    alert("Correo enviado")
-    setName("");
-    setEmail("");
-    setComment("");
-  };
   return (
     <section className="animate__animated animate__fadeIn">
       {/* Contact Section */}
@@ -64,65 +50,7 @@ const Contacto = () => {
             </div>
           </Col>
           <Col xs={12} md={6}>
-            <Form
-              action="https://formsubmit.co/7f10ef421f649de5e7fe615b8ccea241"
-              method="POST"
-              onSubmit={handleSubmit}
-            >
-              <FloatingLabel
-                controlId="floatingInput"
-                label="Su nombre"
-                className="mb-3"
-              >
-                <Form.Control
-                  type="text"
-                  placeholder="Su nombre"
-                  name="name"
-                  onChange={(event) => setName(event.target.value)}
-                  value={name}
-                  required
-                />
-              </FloatingLabel>
-              <FloatingLabel
-                controlId="floatingEmail"
-                label="Su email"
-                className="mb-3"
-              >
-                <Form.Control
-                  type="email"
-                  placeholder="Su email"
-                  name="email"
-                  onChange={event => setEmail(event.target.value)}
-                  value={email}
-                  required
-                />
-              </FloatingLabel>
-              <FloatingLabel controlId="floatingTextarea2" label="su mensaje">
-                <Form.Control
-                  as="textarea"
-                  placeholder="su mensaje"
-                  style={{ height: "100px" }}
-                  name="comment"
-                  onChange={(event) => setComment(event.target.value)}
-                  value={comment}
-                  required
-                />
-              </FloatingLabel>
-              <Button variant="warning" type="submit" className="mt-3 w-100">
-                Enviar
-              </Button>
-              <input
-                type="hidden"
-                name="_next"
-                value="https://enidev911.github.io/asiducam"
-              />
-              <input
-                type="hidden"
-                name="_subject"
-                value="Nuevo correo desde la Web"
-              />
-              <input type="hidden" name="_captcha" value="false" />
-            </Form>
+            <FormEmailjs/>
           </Col>
         </Row>
       </Container>

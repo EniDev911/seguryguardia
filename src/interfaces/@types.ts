@@ -8,6 +8,6 @@ export type Service = {
 
 
 export interface IApp {
-    services: Service[],
-    getService: (id: string) => Service | void
+    nameServices: string[];
+    services: Service[]
 }

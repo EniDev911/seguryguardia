@@ -11,11 +11,13 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.5.6",
     "react-router-dom": "^6.4.2",
     "sweetalert2": "^11.6.15",
     "sweetalert2-react-content": "^5.0.7",
@@ -23,7 +25,9 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
+    "@types/react-bootstrap": "^0.32.32",
     "@types/react-dom": "^18.0.6",
+    "@types/react-lazy-load-image-component": "^1.5.2",
     "@types/react-router-dom": "^5.3.3",
     "@types/sweetalert": "^2.0.4",
     "@vitejs/plugin-react": "^2.1.0",
