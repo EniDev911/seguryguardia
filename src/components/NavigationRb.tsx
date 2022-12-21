@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link, useLocation } from "react-router-dom";
 import Logo from '../assets/png/logo.png'
 
-function NavigationRb() {
+export default () => {
   const location = useLocation();
 
   return (
@@ -30,7 +30,3 @@ function NavigationRb() {
     </Navbar>
   );
 }
-
-export default NavigationRb
-
-  ;

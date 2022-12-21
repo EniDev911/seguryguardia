@@ -17,7 +17,7 @@ const AppProvider: React.FC<AppCtxProviderProps> = ({ children }) => {
   const [nameServices, setNameServices] = useState([]);
 
   useEffect(() => {
-    fetch("/data/servicios.json")
+    fetch("./data/servicios.json")
       .then((res) => res.json())
       .then((data) => {
         setServices(data.servicios),

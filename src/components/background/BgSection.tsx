@@ -11,7 +11,7 @@ export default ({ title, subtitle, image }: Props) => {
 
   const [source, setSource] = useState("")
   const [loadStyle, setLoadStyle] = useState({
-    backgroundImage: "linear-gradient(50deg, rgba(10, 20, 10, 1), rgba(210, 210, 220, .4))",
+    backgroundImage: "linear-gradient(25deg, rgba(10, 0, 0, 1), rgba(240, 210, 40, 1))",
     backgroundSize: "cover",
     backgroundPosition: "center center",
     padding: "120px 0"
@@ -27,7 +27,6 @@ export default ({ title, subtitle, image }: Props) => {
     }
     }, [source])
 
-  // const bgImg = image? `linear-gradient(50deg, rgba(10, 20, 10, 1), rgba(210, 210, 220, .4)), url(${source})` : 'linear-gradient(25deg, rgba(10, 0, 0, 1), rgba(240, 210, 40, 1))'
   return (
     <Stack
       style={loadStyle}

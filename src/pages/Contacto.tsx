@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import FormEmailjs from '../components/FormEmailjs'
 
-const Contacto = () => {
+export default () => {
 
   return (
-    <section className="animate__animated animate__fadeIn">
+    <React.Fragment>
       {/* Contact Section */}
-      <Container className="my-5">
+      <Container className="my-5 animate__animated animate__fadeIn" as="section">
         <Row>
           <Col xs={12} md={6}>
             <p>
@@ -60,8 +60,6 @@ const Contacto = () => {
         className="w-100 mt-3"
         height="450"
       ></iframe>
-    </section>
+    </React.Fragment>
   );
 };
-
-export default Contacto;
