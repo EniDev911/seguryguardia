@@ -8,8 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay"
 
-import nextImg from '../../assets/png/btns/forward_96px.png'
-import prevImg from '../../assets/png/btns/back_96px.png'
 
 import { Row } from "react-bootstrap";
 
@@ -18,12 +16,10 @@ import { Pagination, Navigation } from "swiper";
 
 import logoCmp from "../../assets/png/clientes/logos/Logo-CMP_WEB.jpeg";
 import logoMc from "../../assets/png/clientes/logos/Logo_mc.jpg";
-import TPC from "../../assets/png/clientes/tcp_cliente.png";
+import TPC from "../../assets/png/clientes/logos/TPC.png";
 import MTA from "../../assets/png/clientes/logos/MTA.png";
 import Ulog from "../../assets/png/clientes/logos/Ulog.jpeg";
 import Famesa from "../../assets/png/clientes/logos/Famesa.png";
-import SociosImg from "../../assets/items/socios.jpg";
-import SwiperControl from "../controls/SwiperControl";
 
 export default function ReviewClientes() {
   const navigationPrevRef = React.useRef<HTMLInputElement>(null)
