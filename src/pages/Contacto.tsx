@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import FormEmailjs from '../components/FormEmailjs'
+import FormEmailjs from '../components/body/FormEmailjs'
 
 export default () => {
 
@@ -16,36 +16,30 @@ export default () => {
             </p>
             <br />
             <div className="d-flex align-items-center p-1 m-0">
-              <div className="py-2 px-3 rounded d-flex me-3">
+              <div className="py-2 px-3 d-flex me-3 h-100">
                 <i className="fa-solid fa-location-dot fs-3 text-warning"></i>
               </div>
-              <div>
-                <p>
-                  Dirección: <br />
+              <div className="d-flex flex-column">
+                  Dirección: 
                   <small>Baquedano 963, Coquimbo</small>
-                </p>
               </div>
             </div>
             <div className="d-flex align-items-center p-1 m-0">
               <div className="py-2 px-3 rounded d-flex me-3">
                 <i className="fa-solid fa-phone fs-4 text-warning"></i>
               </div>
-              <div>
-                <p>
-                  Fono: <br />
+              <div className="d-flex flex-column">
+                  Fono: 
                   <small>+56 51 232 2643</small>
-                </p>
               </div>
             </div>
             <div className="d-flex align-items-center p-1 m-0">
               <div className="py-2 px-3 rounded d-flex me-3">
-                <i className="fa-brands fa-whatsapp fs-4 text-warning"></i>
+                <i className="fa-brands fa-whatsapp fs-3 text-warning"></i>
               </div>
-              <div>
-                <p>
-                  Celular: <br />
+              <div className="d-flex flex-column">
+                  Celular: 
                   <small>+56 9 7445 5373</small>
-                </p>
               </div>
             </div>
           </Col>

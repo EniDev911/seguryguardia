@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import BgHeroRb from "../components/background/BgSection";
 import ReviewCliente from "../components/review/Clientes";
 import Valores from "../components/review/Valores";
-import SubHero from "../components/SubHero";
+import HeroText from "../components/body/HeroText";
 import empresaData from "../assets/data/empresa.json";
 
 const Empresa = () => {
@@ -11,7 +11,7 @@ const Empresa = () => {
     <section className="bg-gray bg-gradient animate__animated animate__fadeIn">
       <BgHeroRb title="empresa" image=""/>
       <Container className="p-5 bg-body shadow">
-        <SubHero />
+        <HeroText />
         {empresaData.empresa.map((item) => {
           return (
             <div key={item.id}>

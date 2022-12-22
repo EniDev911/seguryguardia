@@ -1,7 +1,7 @@
 import React from 'react'
 import { Stack } from 'react-bootstrap'
 
-const SubHero = () => {
+export default () => {
   return (
       <Stack direction="horizontal" gap={3} className="mx-auto justify-content-center" style={{
         color: "#666",
@@ -17,5 +17,3 @@ const SubHero = () => {
       </Stack>
   )
 }
-
-export default SubHero
