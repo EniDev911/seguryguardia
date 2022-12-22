@@ -2,10 +2,6 @@ import React from 'react'
 import nextImg from '../../assets/png/btns/forward_96px.png'
 import prevImg from '../../assets/png/btns/back_96px.png'
 
-
-
-
-
 const SwiperControl = (props: any) => {
 
   return (

@@ -24,9 +24,9 @@ const MySwal = withReactContent(Swal);
     const form = event.target as HTMLFormElement;
     emailjs
     .sendForm(
-      import.meta.env.VITE_SERVICEID, // gmail
+      import.meta.env.VITE_SERVICEID, // cliente smtp
       import.meta.env.VITE_TEMPLATEID, // body template
-      form, 
+      form, // formulario captado
       import.meta.env.VITE_PUBLICKEY // public key emailjs
     )
     .then((res) => {

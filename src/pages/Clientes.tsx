@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 import ReviewClientes from '../components/review/Clientes'
 import sociosImg from '../assets/items/socios.jpg'
 
-function ClientesRb() {
+export default () => {
   return (
     <React.Fragment>
       <section className="animate__animated animate__fadeIn">
@@ -31,5 +31,3 @@ function ClientesRb() {
     </React.Fragment>
   )
 }
-
-export default ClientesRb

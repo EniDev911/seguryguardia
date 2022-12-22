@@ -22,7 +22,7 @@ export default () => {
               <div>
                 <p>
                   Dirección: <br />
-                  <small>Baquedano 963, coquimbo</small>
+                  <small>Baquedano 963, Coquimbo</small>
                 </p>
               </div>
             </div>

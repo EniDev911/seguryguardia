@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Container, Button } from "react-bootstrap";
-import CardRb from "../CardRb";
+import CardRb from "../body/Card";
 import {useAppContext} from '../../context/AppCtx'
 
 // import required modules

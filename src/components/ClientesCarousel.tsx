@@ -1,5 +1,5 @@
 import React from 'react'
-import CardRb from './CardRb';
+import CardRb from './body/Card';
 import s1 from '../assets/png/services/01.png'
 
 function ClientesCarousel() {

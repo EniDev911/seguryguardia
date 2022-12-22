@@ -1,7 +1,6 @@
-import React, {lazy} from "react";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import BgHeroRb from "../components/background/BgSection";
-import CardRb from "../components/CardRb";
+import CardRb from "../components/body/Card";
 import { useAppContext } from "../context/AppCtx";
 import bgServicio from "../assets/items/servicios.jpg";
 
