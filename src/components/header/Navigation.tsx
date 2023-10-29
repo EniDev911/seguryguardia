@@ -9,10 +9,10 @@ export default () => {
 
   return (
     <Navbar expand="lg" variant="dark" style={{
-        background: "linear-gradient(to right, #000 30%, #222 60%, #333 80%)",
-        borderTop: "1px solid #fff",
-        boxShadow: "3px 2px 12px #333"
-      }}>
+      background: "linear-gradient(to right, #000 30%, #222 60%, #333 80%)",
+      borderTop: "1px solid #fff",
+      boxShadow: "3px 2px 12px #333"
+    }}>
       <Container>
         {/* Logo Brand */}
         <Navbar.Brand as={Link} to="/">
@@ -26,7 +26,6 @@ export default () => {
             <Nav.Link as={Link} to="/empresa" className={location.pathname === "/empresa" ? "active" : ""}>Empresa</Nav.Link>
             <Nav.Link as={Link} to="/servicios" className={location.pathname === "/servicios" ? "active" : ""}>Servicios</Nav.Link>
             <Nav.Link as={Link} to="/clientes" className={location.pathname === "/clientes" ? "active" : ""}>Clientes</Nav.Link>
-            <Nav.Link as={Link} to="/galeria" className={location.pathname === "/galeria" ? "active" : ""}>Galería</Nav.Link>
             <Nav.Link as={Link} to="/contacto" className={location.pathname === "/contacto" ? "active" : ""}>Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>

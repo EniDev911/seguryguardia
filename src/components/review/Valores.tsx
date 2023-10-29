@@ -4,15 +4,15 @@ import data from '../../assets/data/valores.json'
 
 const Valores = () => {
   return (
-    <Container fluid className="p-5 my-4 bg-body">
+    <Container fluid className="p-5 my-4 bg-dark">
       <h4 className="fw-bold text-center fs-2" style={{ color: "#777" }}>NUESTROS VALORES</h4>
       <Row className="justify-content-center">
         {
           data.map(val => {
             return (
-              <Col key={val.id} xs={6} md={4} lg={4} xl={3} xxl={2} className="mx-auto">
-                <Card className="my-2 border-0">
-                  <Card.Header className="mx-auto bg-body">
+              <Col key={val.id} xs={10} md={6} lg={4} xl={3} xxl={2} className="mx-auto">
+                <Card className="my-2 rounded border-0 bg-info">
+                  <Card.Header className="mx-auto bg-dark text-light">
                     <i className={val.icon} />
                   </Card.Header>
                   <Card.Body>
