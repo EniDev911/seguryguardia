@@ -8,27 +8,25 @@ import empresaData from "../assets/data/empresa.json";
 
 const Empresa = () => {
   return (
-    <section className="bg-gray bg-gradient animate__animated animate__fadeIn">
-      <BgHeroRb title="empresa" image=""/>
+    <section className="bg-light animate__animated animate__fadeIn">
+      <BgHeroRb title="empresa" subtitle="Quienes Somos?" image=""/>
       <Container className="p-5 bg-body shadow">
         <HeroText />
         {empresaData.empresa.map((item) => {
           return (
             <div key={item.id}>
               <h4
-                className="mt-5 fw-bold mb-4"
+                className="mt-5 fw-bold fs-2 mb-4"
                 style={{
-                  color: "#00000070",
-                  textDecoration: "3px underline #ffc107",
-                  textUnderlineOffset: "10px",
+                  color: "#347",
                 }}
               >
                 {item.title}
               </h4>
               <p
-                style={{ color: "#33333390" }}
+                style={{ color: "#333333" }}
                 dangerouslySetInnerHTML={{ __html: item.content }}
-              ></p>
+              ></p><hr/>
             </div>
           );
         })}

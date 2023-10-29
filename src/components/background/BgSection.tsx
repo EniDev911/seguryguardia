@@ -3,11 +3,12 @@ import { Stack } from "react-bootstrap";
 
 type Props = {
   title: string;
+  titleStyle: object;
   subtitle?: string;
   image: string;
 };
 
-export default ({ title, subtitle, image }: Props) => {
+export default ({ title, subtitle, image, titleStyle }: Props) => {
 
   const [source, setSource] = useState("")
   const [loadStyle, setLoadStyle] = useState({
@@ -22,7 +23,7 @@ export default ({ title, subtitle, image }: Props) => {
     img.onload = () => {
       setSource(image)
       setLoadStyle({...loadStyle,
-        backgroundImage: `linear-gradient(50deg, rgba(10, 20, 10, 1), rgba(210, 210, 220, .4)), url(${source})`
+        backgroundImage: `linear-gradient(rgba(210, 210, 220, .2) 10%, rgba(10, 20, 10, 1) 80%), url(${source})`
       })
     }
     }, [source])
@@ -33,13 +34,11 @@ export default ({ title, subtitle, image }: Props) => {
     >
       <h2
         className="display-4 m-3 fw-bold text-light text-uppercase"
-        style={{
-          letterSpacing: "3px",
-        }}
+        style={titleStyle}
       >
         {title}
       </h2>
-      <h4 className="px-3 m-3" style={{ color: "#ddd" }}>
+      <h4 className="px-3 m-3" style={{ color: "#ddd"}}>
         { subtitle? subtitle : 'Asociación Gremial de Dueños de Camiones de Coquimbo'} 
       </h4>
     </Stack>

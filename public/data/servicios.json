@@ -1,17 +1,17 @@
 {
   "nombres": [
-    "Re pesaje en Batea", 
-    "Embarque concentrado en rampla plana",
-    "Desembarque Trigo en Batea",
+    "Soluciones de seguridad para condominios",
+    "Soluciones de seguridad para empresas",
+    "Asesorías, en seguridad privada",
     "Movimientos internos en rampla plana",
     "Algunos servicios especiales de movimiento de maquinarias"],
 
   "servicios" : [
   {
     "id": "S001",
-    "title": "Camión plataforma",
+    "title": "Condominios",
     "desc": "Transporte de carga general de todo tipo, sin protección o con carpas.",
-    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/01b.png",
+    "img": "/apartment.png",
     "img2": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/01.png"
   },
   {
@@ -53,44 +53,44 @@
     "id": "S007",
     "title": "Tractor frontal 6x6",
     "desc": "Aplicaciones de todo terreno, minería, operaciones forestales.",
-    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/07b.png",  
-    "img2": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/07.png"  
+    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/07b.png",
+    "img2": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/07.png"
 
   },
   {
     "id": "S008",
     "title": "Semirremolque plataforma plana",
     "desc": "Carga general sin protección al clima. Ampliamente usado en muchas aplicaciones.",
-    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/08b.png",  
+    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/08b.png",
     "img2": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/08.png"
   },
   {
     "id": "S009",
     "title": "Semirremolque plataforma extensible",
     "desc": "Transporte de cargas especialmente largas. La longitud del semirremolque se adapta a la carga.",
-    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/09b.png",  
+    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/09b.png",
     "img2": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/09.png"
   },
   {
     "id": "S010",
     "title": "Semirremolque plataforma baja",
     "desc": "Transporte de equipamiento de construcción y soporte industrial, taler como dozers, grúa, etc.",
-    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/10b.png",  
+    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/10b.png",
     "img2": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/10.png"
   },
   {
     "id": "S011",
     "title": "Semirremolque portacontenedores",
     "desc": "Transporte de contenedores sin exceso de peso debido a la plataforma, que no es necesaria para esta operación.",
-    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/11b.png",  
+    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/11b.png",
     "img2": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/11.png"
   },
   {
     "id": "S012",
     "title": "Semirremolque tolva de volteo trasero granelero",
     "desc": "Transporte de graneles solidos.",
-    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/12b.png",  
+    "img": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/12b.png",
     "img2": "https://raw.githubusercontent.com/EniDev911/assets/main/png/asiducam/servicios/12.png"
-  } 
+  }
 ]
 }

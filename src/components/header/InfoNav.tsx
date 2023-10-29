@@ -1,34 +1,30 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import {mailTo, whatsAppTo} from "../../utilities/utilsFormat";
+import { mailTo, whatsAppTo } from "../../utilities/utilsFormat";
 
 export default () => {
   return (
-    <Navbar bg="dark" className="heroNav navFont">
+    <Navbar bg="light" className="heroNav navFont text-dark">
       <Container>
         <Nav className="me-auto">
-          <Navbar.Text className="me-3 text-light">
+          <Navbar.Text className="me-3">
             <a
-              href={whatsAppTo("56974455373", "Buenos días")}
+              href={whatsAppTo("56941290755", "Buenos días")}
               target="_blank"
-              className="text-decoration-none text-light"
+              className="text-decoration-none"
             >
-              <i className="fab fa-whatsapp text-warning"></i>&nbsp;&nbsp;
-              Teléfono +56 9 7445 5373
+              <i className="fab fa-whatsapp text-success"></i>&nbsp;&nbsp;
+              Teléfono +56 9 4129 0755
             </a>
           </Navbar.Text>
-          <Navbar.Text className="me-3 text-light">
+          <Navbar.Text className="me-3">
             <a
-              href={mailTo('cotizaciones@asiducam.cl', 'Cotizar')}
-              className="text-decoration-none text-light"
+              href={mailTo('seguryguardia@hotmail.com', 'Cotizar servicios')}
+              className="text-decoration-none"
             >
-              <i className="fa-solid fa-envelope text-warning"></i>&nbsp;&nbsp;
-              cotizaciones@asiducam.cl
+              <i className="fa-solid fa-envelope text-danger"></i>&nbsp;&nbsp;
+              seguryguardia@hotmail.com
             </a>
-          </Navbar.Text>
-          <Navbar.Text className="me-2 text-light">
-            <i className="fa-solid fa-sheet-plastic text-warning"></i>
-            &nbsp;&nbsp; intranet
           </Navbar.Text>
         </Nav>
       </Container>

@@ -7,7 +7,7 @@ import withReactContent from 'sweetalert2-react-content';
 
 export default () => {
 
-const MySwal = withReactContent(Swal);
+  const MySwal = withReactContent(Swal);
   const showMessage = () => {
     MySwal.fire({
       icon: 'success',
@@ -23,23 +23,23 @@ const MySwal = withReactContent(Swal);
     event.preventDefault();
     const form = event.target as HTMLFormElement;
     emailjs
-    .sendForm(
-      import.meta.env.VITE_SERVICEID, // cliente smtp
-      import.meta.env.VITE_TEMPLATEID, // body template
-      form, // formulario captado
-      import.meta.env.VITE_PUBLICKEY // public key emailjs
-    )
-    .then((res) => {
-      console.log(res);
-      showMessage();
-      form.reset();
-    })
-    .catch((err) => {
-      console.log(err),
-      alert("Ocurrió un error por parte de nuestro servicio")
-    });
+      .sendForm(
+        import.meta.env.VITE_SERVICEID, // cliente smtp
+        import.meta.env.VITE_TEMPLATEID, // body template
+        form, // formulario captado
+        import.meta.env.VITE_PUBLICKEY // public key emailjs
+      )
+      .then((res) => {
+        console.log(res);
+        showMessage();
+        form.reset();
+      })
+      .catch((err) => {
+        console.log(err),
+          alert("Ocurrió un error por parte de nuestro servicio")
+      });
   };
-  
+
   return (
     <Form method="POST" id="form" onSubmit={handleSubmit}>
       <FloatingLabel
@@ -78,7 +78,7 @@ const MySwal = withReactContent(Swal);
           required
         />
       </FloatingLabel>
-      <Button variant="warning" type="submit" className="mt-3 w-100">
+      <Button variant="dark" type="submit" className="mt-3 w-100">
         Enviar
       </Button>
     </Form>

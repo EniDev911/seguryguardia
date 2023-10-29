@@ -7,12 +7,12 @@ import HeroText from "../components/body/HeroText";
 
 export default () => {
   return (
-    <section  className="bg-light w-100">
+    <section className="bg-light w-100">
       <CarouselRb />
       <h2 className="display-4 fw-bold my-5 text-center" style={{
         letterSpacing: "3px"
-      }}>ASIDUCAM</h2>
-      <HeroText/>
+      }}>SEGURYGUARDIA</h2>
+      <HeroText />
       <Valores />
       <ReviewService />
       <ReviewClientes />

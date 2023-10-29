@@ -15,14 +15,17 @@ function Contacto() {
                 padding: '110px 0'
             }}>
                 <Col>
-                    <h3 className='fs-1 fw-bold'>HABLEMOS</h3>
+                    <h3 className='fs-1 fw-bold' style={{
+                        background: "rgba(0, 0, 0, .2)",
+                        backdropFilter: "blur(5px)"
+                    }}>HABLEMOS</h3>
                 </Col>
                 <Col>
-                    <p className="fs-3">Envíenos sus requerimientos</p>
+                    <p className="fs-3 text-info">Envíenos sus requerimientos</p>
                 </Col>
                 <Col>
                     <Button variant="outline-light"
-                        className="rounded-0"
+                        className="rounded-2"
                         size="lg"
                         onClick={() => navigate('contacto')}>CONTÁCTENOS</Button>
                 </Col>

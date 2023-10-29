@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import firstSlideImg from '../assets/slider/01.jpg'
 import secondSlideImg from '../assets/slider/02.jpeg'
 import thirdSlideImg from '../assets/slider/04.jpeg'
-import fourdSlideImg from '../assets/slider/01.jpeg'
+import fourdSlideImg from '../assets/slider/01.jpg'
 
 function CarouselRb() {
 
@@ -13,13 +13,15 @@ function CarouselRb() {
       <Carousel.Item interval={4000} className="">
         <div className='w-100 p-5 slide text-light'
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(${firstSlideImg})`,
+            backgroundImage: `linear-gradient(290deg, rgba(30, 30, 30, 0.4) 50%, rgba(0, 0, 0, .9) 50%), url(${firstSlideImg})`,
             backgroundPosition: 'center center',
             backgroundSize: '100% 100%',
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
+            minHeight: '100%',
+            minWidth: '100%'
           }}>
-          <h3 className='carousel-title animate__animated animate__zoomIn animate__delay-1s fw-bold'>ASIDUCAM</h3>
-          <p className='p1 fs-2 fs-bold fst-italic animate__animated animate__lightSpeedInRight animate__delay-2s animate__slow'>Asociación Gremial de Dueños de Camiones de Coquimbo</p>
+          <h3 className='carousel-title animate__animated animate__zoomIn animate__delay-1s fw-bold'>SEGURYGUARDIA</h3>
+          <p className='p1 fs-2 fw-normal animate__animated animate__fadeIn animate__delay-2s animate__slow'>Experiencia y conocimiento</p>
         </div>
       </Carousel.Item>
       {/* SECOND SLIDE */}
@@ -34,7 +36,8 @@ function CarouselRb() {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(${secondSlideImg})`,
             backgroundPosition: 'center center',
             backgroundSize: '100% 100%',
-            backgroundRepeat: 'no-repeat'}}>
+            backgroundRepeat: 'no-repeat'
+          }}>
           <h3 className='text-center carousel-title animate__animated animate__fadeIn animate__delay-1s text-gray fw-bold rounded'
             style={{
               backdropFilter: "blur(10px)",
@@ -56,7 +59,8 @@ function CarouselRb() {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${thirdSlideImg})`,
           backgroundPosition: 'center center',
           backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'}}>
+          backgroundRepeat: 'no-repeat'
+        }}>
           <h3 className='carousel-title text-center animate__animated animate__fadeIn animate__delay-1s text-gray fw-bold rounded' style={{
             backdropFilter: "blur(10px)",
             margin: "0 auto",
@@ -78,7 +82,8 @@ function CarouselRb() {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${fourdSlideImg})`,
           backgroundPosition: 'center center',
           backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'}}>
+          backgroundRepeat: 'no-repeat'
+        }}>
           <h3 className='carousel-title p-2 bg-warning bg-gradient text-dark animate__animated animate__zoomIn animate__delay-1s fw-bold text-gray' style={{
             backdropFilter: "blur(10px)",
             margin: '0 auto'

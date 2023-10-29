@@ -8,9 +8,9 @@ export default () => {
         fontWeight: "500",
       }}>
         <div className="text-stack d-flex">
-          <p className=""><small>DISTRIBUCIÓN</small></p>
+          <p className=""><small>ASESORÍAS</small></p>
           <div className="vr mx-2" />
-          <p className=""><small>TRANSPORTE</small></p>
+          <p className=""><small>SEGURIDAD</small></p>
           <div className="vr mx-2" />
           <p className=""><small>LOGISTÍCA, DESDE 2009</small></p>
         </div>

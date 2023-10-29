@@ -5,7 +5,7 @@ function Footer() {
     return (
         <Row style={{ background: "#111" }}>
             <p className="py-3 fs-5 text-light m-0 text-center">
-                © 2022 Asiducam
+                © 2023 SeguryGuardia
             </p>
         </Row>
     )

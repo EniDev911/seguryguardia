@@ -2,25 +2,29 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, useLocation } from "react-router-dom";
-import Logo from '../../assets/png/logo.png'
+import Logo from '../../assets/png/logo_empresa.png'
 
 export default () => {
   const location = useLocation();
 
   return (
-    <Navbar bg="light" expand="lg" variant="light">
+    <Navbar expand="lg" variant="dark" style={{
+        background: "linear-gradient(to right, #000 30%, #222 60%, #333 80%)",
+        borderTop: "1px solid #fff",
+        boxShadow: "3px 2px 12px #333"
+      }}>
       <Container>
         {/* Logo Brand */}
         <Navbar.Brand as={Link} to="/">
           <img src={Logo} height="100"
-            className="d-inline-block align-top" />
+            className="d-inline-block align-top logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-uppercase">
             <Nav.Link as={Link} to="/" className={location.pathname === "/" ? "active" : ""}>Inicio</Nav.Link>
-            <Nav.Link as={Link} to="/servicios" className={location.pathname === "/servicios" ? "active" : ""}>Servicios</Nav.Link>
             <Nav.Link as={Link} to="/empresa" className={location.pathname === "/empresa" ? "active" : ""}>Empresa</Nav.Link>
+            <Nav.Link as={Link} to="/servicios" className={location.pathname === "/servicios" ? "active" : ""}>Servicios</Nav.Link>
             <Nav.Link as={Link} to="/clientes" className={location.pathname === "/clientes" ? "active" : ""}>Clientes</Nav.Link>
             <Nav.Link as={Link} to="/galeria" className={location.pathname === "/galeria" ? "active" : ""}>Galería</Nav.Link>
             <Nav.Link as={Link} to="/contacto" className={location.pathname === "/contacto" ? "active" : ""}>Contacto</Nav.Link>
