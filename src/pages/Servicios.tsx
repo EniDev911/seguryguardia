@@ -6,14 +6,11 @@ import bgServicio from "../assets/items/servicios.png";
 
 export default () => {
   const { services, nameServices } = useAppContext();
-  const styleText = {
-    letterSpacing: "6px"
-  }
+
   return (
     <>
       <BgHeroRb
         title="servicios"
-        titleStyle={styleText}
         subtitle="Soluciones integrales, asesoría y más"
         image={bgServicio}
       />

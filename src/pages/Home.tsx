@@ -2,7 +2,7 @@ import React, { lazy } from "react";
 const CarouselRb = lazy(() => import('../components/CarouselRb'))
 import ReviewClientes from "../components/review/Clientes";
 import ReviewService from "../components/review/ServicesAlt";
-import Valores from "../components/review/Valores";
+import Valores from "../components/review/ValoresSwiper";
 import HeroText from "../components/body/HeroText";
 
 export default () => {
